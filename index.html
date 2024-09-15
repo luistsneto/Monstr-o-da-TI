@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Monstrão da TI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="home-box custom-box">
+		<img src="game.jpg" class="imagem-pequena"><br><br>
+		<h3>Bem vindo ao Monstrão da TI! </h3>
+		<p>Teste seus conhecimentos em TI! O Monstrão da TI te desafia a responder perguntas sobre hardware, software e redes. Mostre que você é fera em tecnologia e suba no ranking dos melhores jogadores.<br><br>
+			<b>Instruções:</b><br>
+			- Você responderá um total de <span class="total-question"></span> perguntas sobre Tecnologia da Informação<br>
+			- Para saber o resultado, você deverá passar por todas as perguntas<br>
+			- Você não pode voltar para a pergunta anterior<br>
+
+- Chegou a hora de mostrar que você é mesmo o Monstrão da TI.<br><br>
+		
+Comece agora mesmo!</p>
+		<button type="button" class="btn" onclick="startQuiz()">Começar</button>
+	</div>
+
+	<div class="quiz-box custom-box hide">
+		<div class="small-icon">
+		</div>
+		<div class="question-number">
+
+		</div>
+		<div class="question-text">
+
+		</div>
+		<div class="option-container">
+
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Próximo</button>
+		</div>
+		<div class="answer-indicator">
+
+		</div>
+	</div>
+
+	<div class="result-box custom-box hide">
+		<div class="icone-pequeno">
+		</div><br><br>
+		<h1>Resultado</h1>
+		<table>
+			<tr>
+				<td>Total de perguntas</td>
+				<td><span class="total-question"></span></td>
+			</tr>
+			<tr>
+				<td>Corretas</td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Incorretas</td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Porcentagem</td>
+				<td><span class="percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td><span class="total-score"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Tente novamente</button>
+		<button type="button" class="btn" onclick="goToHome()">Página Principal</button>
+	</div>
+
+	<script src="perguntas.js"></script>
+	<script src="app.js"></script>
+
+</body>
+
+</html>
